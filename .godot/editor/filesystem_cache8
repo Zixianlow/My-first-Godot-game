@@ -1,0 +1,37 @@
+ea4bc82a6ad023ab7ee23ee620429895
+::res://::1699263528
+Bananas.png::CompressedTexture2D::3295899149011646252::1699097204::1699263529::1::::<><>::
+Camera2D.gd::GDScript::-1::1699097902::0::1::::<>Camera2D<>::
+character.gd::GDScript::-1::1699262069::0::1::::<>CharacterBody2D<>::
+character.tscn::PackedScene::6091468991442355258::1699263373::0::1::::<><>::uid://ksqjr1bydawx::::res://Jump (32x32).png<>res://character.gd<>uid://c1oekobsg5eow::::res://Idle (32x32).png<>uid://bitlvtatqahb8::::res://Run (32x32).png
+Checkpoint (Flag Idle)(64x64).png::CompressedTexture2D::5566149486645093212::1699260528::1699263529::1::::<><>::
+checkpoint.gd::GDScript::-1::1699260658::0::1::::Checkpoint<>Area2D<>::
+checkpoint.tscn::PackedScene::1300809543448013618::1699263373::0::1::::<><>::uid://clkjw0fk2xob1::::res://Checkpoint (Flag Idle)(64x64).png
+CollisionShape2D.gd::GDScript::-1::1699075912::0::1::::<>CollisionShape2D<>::
+End (Pressed) (64x64).png::CompressedTexture2D::6498596133139186509::1699177591::1699263529::1::::<><>::
+enemy.gd::GDScript::-1::1699077668::0::1::::<>CharacterBody2D<>::
+enemy.tscn::PackedScene::5271063993377608303::1699263373::0::1::::<><>::uid://1wygtg0coe5b::::res://Idle Mask(32x32).png<>uid://clsw75mlkotig::::res://Jump Mask(32x32).png<>uid://d06d0nca1yyba::::res://Run Mask(32x32).png
+export_presets.cfg::TextFile::-1::1699263138::0::1::::<><>::
+Green.png::CompressedTexture2D::4293951049295262545::1566197352::1699263529::1::::<><>::
+icon.svg::CompressedTexture2D::5942244425485078128::1699008896::1699263529::1::::<><>::
+Idle (32x32).png::CompressedTexture2D::6626914054140742098::1699075332::1699263529::1::::<><>::
+Idle Mask(32x32).png::CompressedTexture2D::1871795176119574973::1699075666::1699263529::1::::<><>::
+item.gd::GDScript::-1::1699260465::0::1::::Trophy<>Area2D<>::
+item.tscn::PackedScene::5444665185306134446::1699263373::0::1::::<><>::uid://cyt76t000lc5b::::res://End (Pressed) (64x64).png
+Jump (32x32).png::CompressedTexture2D::740035713122300731::1699074771::1699263529::1::::<><>::
+Jump Mask(32x32).png::CompressedTexture2D::5583471960975336018::1699074785::1699263529::1::::<><>::
+jump_instruction.gd::GDScript::-1::1699259429::0::1::::Jump<>Area2D<>::
+jump_instruction.tscn::PackedScene::2043134567157745468::1699263373::0::1::::<><>::uid://cs0kgpgub0m76::::res://Start (Moving) (64x64).png
+left_instruction.gd::GDScript::-1::1699260205::0::1::::Left<>Area2D<>::
+left_instruction.tscn::PackedScene::1377067001225412274::1699263373::0::1::::<><>::uid://cs0kgpgub0m76::::res://Start (Moving) (64x64).png
+main.tscn::PackedScene::6248282927413343760::1699263373::0::1::::<><>::uid://b2ga0m4uljmon::::res://Green.png<>uid://motuh6h48d4g::::res://tile.tscn<>uid://cs10ust77mb2a::::res://character.tscn<>res://jump_instruction.gd<>uid://chdlwh4jdyjwp::::res://enemy.tscn<>uid://4dyel0wksaee::::res://jump_instruction.tscn<>res://enemy.gd<>uid://bvocrc14go14u::::res://shift_instruction.tscn<>res://shift_instruction.gd<>uid://cjto3tglhuyoc::::res://item.tscn<>uid://d5mmjevla26a::::res://right_instruction.tscn<>uid://tvcdeyqdptfu::::res://left_instruction.tscn<>res://right_instruction.gd<>res://left_instruction.gd<>uid://ssee4ptxlgyc::::res://checkpoint.tscn<>res://checkpoint.gd<>res://trophy.gd
+right_instruction.gd::GDScript::-1::1699260205::0::1::::Right<>Area2D<>::
+right_instruction.tscn::PackedScene::273248376834191578::1699263373::0::1::::<><>::uid://cs0kgpgub0m76::::res://Start (Moving) (64x64).png
+Run (32x32).png::CompressedTexture2D::2987860997545245119::1699075530::1699263529::1::::<><>::
+Run Mask(32x32).png::CompressedTexture2D::8978206334160764130::1699075669::1699263529::1::::<><>::
+shift_instruction.gd::GDScript::-1::1699259885::0::1::::Shift<>Area2D<>::
+shift_instruction.tscn::PackedScene::3889439627668375878::1699263373::0::1::::<><>::uid://cs0kgpgub0m76::::res://Start (Moving) (64x64).png
+Start (Moving) (64x64).png::CompressedTexture2D::6088468679443494503::1699258789::1699263529::1::::<><>::
+Terrain (16x16).png::CompressedTexture2D::7328231176361018420::1699073627::1699263529::1::::<><>::
+tile.tscn::PackedScene::872357166864377316::1699096965::0::1::::<><>::uid://dcn35qydcjvii::::res://Terrain (16x16).png
+trophy.gd::GDScript::-1::1699260770::0::1::::Item<>Area2D<>::

@@ -1,0 +1,94 @@
+[gd_scene load_steps=19 format=3 uid="uid://cvayko2sgn0v1"]
+
+[ext_resource type="Texture2D" uid="uid://b2ga0m4uljmon" path="res://Green.png" id="1_ouwva"]
+[ext_resource type="PackedScene" uid="uid://motuh6h48d4g" path="res://tile.tscn" id="2_dolu0"]
+[ext_resource type="PackedScene" uid="uid://cs10ust77mb2a" path="res://character.tscn" id="3_56ytx"]
+[ext_resource type="Script" path="res://jump_instruction.gd" id="4_0s1fv"]
+[ext_resource type="PackedScene" uid="uid://chdlwh4jdyjwp" path="res://enemy.tscn" id="4_7i5fi"]
+[ext_resource type="PackedScene" uid="uid://4dyel0wksaee" path="res://jump_instruction.tscn" id="5_myepn"]
+[ext_resource type="Script" path="res://enemy.gd" id="5_rgbmg"]
+[ext_resource type="PackedScene" uid="uid://bvocrc14go14u" path="res://shift_instruction.tscn" id="6_lxhl3"]
+[ext_resource type="Script" path="res://shift_instruction.gd" id="6_nc8uw"]
+[ext_resource type="PackedScene" uid="uid://cjto3tglhuyoc" path="res://item.tscn" id="7_11d4l"]
+[ext_resource type="PackedScene" uid="uid://d5mmjevla26a" path="res://right_instruction.tscn" id="7_o520n"]
+[ext_resource type="PackedScene" uid="uid://tvcdeyqdptfu" path="res://left_instruction.tscn" id="8_15iq3"]
+[ext_resource type="Script" path="res://right_instruction.gd" id="8_plf5x"]
+[ext_resource type="Script" path="res://left_instruction.gd" id="10_prdhi"]
+[ext_resource type="PackedScene" uid="uid://ssee4ptxlgyc" path="res://checkpoint.tscn" id="11_n0g3s"]
+[ext_resource type="Script" path="res://checkpoint.gd" id="12_d8li8"]
+[ext_resource type="Script" path="res://trophy.gd" id="14_qe2k2"]
+
+[sub_resource type="LabelSettings" id="LabelSettings_7bqio"]
+font_size = 30
+font_color = Color(0, 0, 0, 1)
+
+[node name="Node" type="Node"]
+
+[node name="TextureRect" type="TextureRect" parent="."]
+texture_filter = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_right = 439.0
+grow_horizontal = 2
+grow_vertical = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+texture = ExtResource("1_ouwva")
+stretch_mode = 1
+
+[node name="TileMap" parent="." instance=ExtResource("2_dolu0")]
+
+[node name="Camera2D" type="Camera2D" parent="."]
+position = Vector2(573, 321)
+
+[node name="Jump Instruction" parent="." instance=ExtResource("5_myepn")]
+position = Vector2(427, 589)
+collision_layer = 2
+collision_mask = 0
+monitoring = false
+script = ExtResource("4_0s1fv")
+
+[node name="Shift Instruction" parent="." instance=ExtResource("6_lxhl3")]
+position = Vector2(801, 588)
+collision_layer = 2
+collision_mask = 0
+script = ExtResource("6_nc8uw")
+
+[node name="Right Instruction" parent="." instance=ExtResource("7_o520n")]
+position = Vector2(259, 493)
+script = ExtResource("8_plf5x")
+
+[node name="Left Instruction" parent="." instance=ExtResource("8_15iq3")]
+position = Vector2(350, 496)
+script = ExtResource("10_prdhi")
+
+[node name="Checkpoint" parent="." instance=ExtResource("11_n0g3s")]
+position = Vector2(1322, 593)
+collision_layer = 2
+collision_mask = 0
+monitoring = false
+script = ExtResource("12_d8li8")
+
+[node name="Trophy" parent="." instance=ExtResource("7_11d4l")]
+position = Vector2(1324, 568)
+script = ExtResource("14_qe2k2")
+item_type = "print_text"
+
+[node name="Enemy" parent="." instance=ExtResource("4_7i5fi")]
+position = Vector2(1239, 88)
+script = ExtResource("5_rgbmg")
+
+[node name="MainCharacter" parent="." instance=ExtResource("3_56ytx")]
+position = Vector2(236, 53)
+
+[node name="Label" type="Label" parent="."]
+offset_left = 538.0
+offset_top = 7.0
+offset_right = 1012.0
+offset_bottom = 88.0
+text = "Get to the flag to win this game"
+label_settings = SubResource("LabelSettings_7bqio")
+horizontal_alignment = 1
+vertical_alignment = 1
+uppercase = true
