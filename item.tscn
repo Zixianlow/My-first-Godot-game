@@ -67,7 +67,7 @@ animations = [{
 }]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_3kr5p"]
-size = Vector2(80, 66)
+size = Vector2(54, 55)
 
 [node name="Item" type="Area2D"]
 collision_layer = 2
@@ -81,5 +81,5 @@ sprite_frames = SubResource("SpriteFrames_8s34w")
 frame_progress = 0.0500927
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
-position = Vector2(1, 24)
+position = Vector2(0, 29.5)
 shape = SubResource("RectangleShape2D_3kr5p")

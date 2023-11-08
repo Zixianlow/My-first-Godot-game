@@ -1,1 +1,5 @@
 res://main.tscn
+res://item.tscn
+res://checkpoint.tscn
+res://character.gd
+res://trophy.gd

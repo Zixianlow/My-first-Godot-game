@@ -85,4 +85,5 @@ func execute_interaction():
 	if all_interactions and not interaction_occurred:
 		item.queue_free()
 		trophy.visible = true
+		trophy.item_label = "You Win !!!"
 		interaction_occurred = true
