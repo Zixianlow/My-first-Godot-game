@@ -3,7 +3,7 @@
 [ext_resource type="Texture2D" uid="uid://clkjw0fk2xob1" path="res://Checkpoint (Flag Idle)(64x64).png" id="1_2btho"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_lefdc"]
-size = Vector2(52, 52)
+size = Vector2(33, 55)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_mlf05"]
 atlas = ExtResource("1_2btho")
@@ -86,9 +86,10 @@ animations = [{
 [node name="Checkpoint" type="Area2D"]
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
-position = Vector2(2, 6)
+position = Vector2(-0.5, 35.5)
 shape = SubResource("RectangleShape2D_lefdc")
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
+scale = Vector2(2, 2)
 sprite_frames = SubResource("SpriteFrames_2s3q7")
 frame_progress = 0.639715
